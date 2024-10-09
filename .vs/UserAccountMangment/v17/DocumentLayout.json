@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\dtos\\accountdtos\\sendgridoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\dtos\\accountdtos\\sendgridoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\manager\\accounts\\iaccountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\manager\\accounts\\iaccountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\manager\\accounts\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\manager\\accounts\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\manager\\accounts\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\manager\\accounts\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\manager\\accounts\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\manager\\accounts\\accountmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\dtos\\accountdtos\\accountlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\dtos\\accountdtos\\accountlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\manager\\accounts\\genralresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\manager\\accounts\\genralresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\dtos\\accountdtos\\accountregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\dtos\\accountdtos\\accountregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|c:\\users\\user\\source\\repos\\useraccountmangment\\useraccountmangment\\dbhelper\\accountcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E456026-CDE7-4FA7-9084-A34FAFBD0F95}|UserAccountMangment\\UserAccountMangment.csproj|solutionrelative:useraccountmangment\\dbhelper\\accountcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAccountManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\IAccountManager.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Manager\\Accounts\\IAccountManager.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\IAccountManager.cs",
+              "RelativeToolTip": "UserAccountMangment\\Manager\\Accounts\\IAccountManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T18:45:28.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\EmailSender.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Manager\\Accounts\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\EmailSender.cs",
+              "RelativeToolTip": "UserAccountMangment\\Manager\\Accounts\\EmailSender.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:40:04.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Controllers\\AccountsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "UserAccountMangment\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:28:32.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Program.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Program.cs",
+              "RelativeToolTip": "UserAccountMangment\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAjwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T14:03:58.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Manager\\Accounts\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\IEmailSender.cs",
+              "RelativeToolTip": "UserAccountMangment\\Manager\\Accounts\\IEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:39:41.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\appsettings.json",
+              "RelativeDocumentMoniker": "UserAccountMangment\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\appsettings.json",
+              "RelativeToolTip": "UserAccountMangment\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-27T13:57:25.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SendGridOptions.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\SendGridOptions.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Dtos\\AccountDtos\\SendGridOptions.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\SendGridOptions.cs",
+              "RelativeToolTip": "UserAccountMangment\\Dtos\\AccountDtos\\SendGridOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:43:47.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "UserAccountMangment\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T16:11:45.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GenralResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\GenralResponse.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Manager\\Accounts\\GenralResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\GenralResponse.cs",
+              "RelativeToolTip": "UserAccountMangment\\Manager\\Accounts\\GenralResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:58:07.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\AccountLoginDto.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Dtos\\AccountDtos\\AccountLoginDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\AccountLoginDto.cs",
+              "RelativeToolTip": "UserAccountMangment\\Dtos\\AccountDtos\\AccountLoginDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:49:01.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\AccountManager.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Manager\\Accounts\\AccountManager.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Manager\\Accounts\\AccountManager.cs",
+              "RelativeToolTip": "UserAccountMangment\\Manager\\Accounts\\AccountManager.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:58:00.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountRegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\AccountRegisterDto.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Dtos\\AccountDtos\\AccountRegisterDto.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Dtos\\AccountDtos\\AccountRegisterDto.cs",
+              "RelativeToolTip": "UserAccountMangment\\Dtos\\AccountDtos\\AccountRegisterDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:49:03.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\DbHelper\\AccountContext.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\DbHelper\\AccountContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\DbHelper\\AccountContext.cs",
+              "RelativeToolTip": "UserAccountMangment\\DbHelper\\AccountContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:52:25.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "UserAccountMangment\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\UserAccountMangment\\UserAccountMangment\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "UserAccountMangment\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:54:32.279Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
