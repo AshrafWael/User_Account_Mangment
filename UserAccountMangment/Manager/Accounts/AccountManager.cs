@@ -12,18 +12,24 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity;
 using System.Linq.Expressions;
+using UserAccountMangment.ConfigrationOptions;
 
 namespace HospitalManagmentSystem.BLL.Manager.Accounts
 {
     public class AccountManager : IAccountManager
     {
+        private readonly JwtOptions _jwtOptions;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
-        public AccountManager(UserManager<ApplicationUser> userManager ,IConfiguration configuration)
+        public AccountManager( JwtOptions jwtOptions,UserManager<ApplicationUser> userManager 
+            ,IConfiguration configuration)
         {
+            _jwtOptions = jwtOptions;
             _userManager = userManager;
             _configuration = configuration;
         }
+
+
         public async Task<GenralResponse> Login(AccountLoginDto LoginDto)
         {
             GenralResponse genralResponse = new GenralResponse();
@@ -82,6 +88,7 @@ namespace HospitalManagmentSystem.BLL.Manager.Accounts
             {
                 List<Claim> claims = new List<Claim>();
                 claims.Add(new Claim("Email", registerDto.Email));
+                claims.Add(new Claim("UserName", registerDto.UserName));
                 claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
                 await _userManager.AddClaimsAsync(user, claims);
                 genralResponse = GenrateToken(claims);
@@ -98,20 +105,22 @@ namespace HospitalManagmentSystem.BLL.Manager.Accounts
             }
         }
             private GenralResponse GenrateToken(IList<Claim> claims)
-            {
-                var SecretKeyString = _configuration["AuthSettings:Key"];
+            { 
+         //   var JwtOptions = builder.Configuration.GetSection("AuthSettings").Get<JwtOptions>();
+
+            var SecretKeyString = _jwtOptions.Key;
                 var SecretKeyByte = Encoding.ASCII.GetBytes(SecretKeyString);
                 SecurityKey securityKey = new SymmetricSecurityKey(SecretKeyByte);
 
                 SigningCredentials signingCredentials = new
                 SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-                var ExpireDate = DateTime.Now.AddDays(3);
+                var ExpireDate = DateTime.Now.AddDays(30);
 
                 JwtSecurityToken jwtSecurity = 
                 new JwtSecurityToken(
-                     issuer: _configuration["AuthSettings:issuer"],
-                     audience: _configuration["AuthSettings:Audince"],
+                     issuer: _jwtOptions.issuer,
+                     audience: _jwtOptions.Audince,
                     claims: claims,
                     signingCredentials: signingCredentials,
                     expires: ExpireDate
