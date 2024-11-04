@@ -12,6 +12,7 @@ using SendGrid.Helpers.Mail;
 using UserAccountMangment.DbHelper;
 using UserAccountMangment.Dtos.AccountDtos;
 using UserAccountMangment.Manager.Accounts;
+using UserAccountMangment.ConfigrationOptions;
 
 namespace UserAccountMangment
 {
@@ -21,19 +22,24 @@ namespace UserAccountMangment
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
+            #region Add services to the container.
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
             builder.Services.AddScoped<IAccountManager, AccountManager>();
+           // builder.Services.AddTransient<Manager.Accounts.IEmailSender, EmailSender>(sp =>
+                  //  new EmailSender(builder.Configuration["SendGridApiKey"]));
+            var JwtOptions = builder.Configuration.GetSection("AuthSettings").Get<JwtOptions>();
+            builder.Services.AddSingleton(JwtOptions);
+            #endregion
+            #region Coniction String configration
             builder.Services.AddDbContext<AccountContext>(options =>
             {
                 options.UseSqlServer(builder.Configuration.
                     GetConnectionString("Cs"));
             });
+            #endregion
+            #region Identity Configartions
             builder.Services.AddIdentity<ApplicationUser, Microsoft.AspNetCore.Identity
             .IdentityRole>(Options =>
             {
@@ -42,8 +48,8 @@ namespace UserAccountMangment
                 Options.Password.RequireUppercase = true;
                 Options.Password.RequiredLength = 5;
             }).AddEntityFrameworkStores<AccountContext>();
-
-            
+            #endregion
+            #region JwtBerer Token Confgartions
             builder.Services.AddAuthentication(auth =>
             {
                 auth.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -56,71 +62,29 @@ namespace UserAccountMangment
                 .TokenValidationParameters
                 {
                     ValidateIssuer = true,
+                    ValidIssuer = JwtOptions.issuer,
                     ValidateAudience = true,
-                    ValidAudience =builder.Configuration["AuthSettings:Audince"],
-                    ValidIssuer = builder.Configuration["AuthSettings:issuer"],
+                    ValidAudience =JwtOptions.Audince,
                     RequireExpirationTime = true,
+                    ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8
-                    .GetBytes(builder.Configuration["AuthSettings:Key"])),
-                    ValidateIssuerSigningKey = true
+                    .GetBytes(builder.Configuration["AuthSettings:Key"]))
                 };
             });
-
-
-            builder.Services.AddTransient<Manager.Accounts.IEmailSender, EmailSender>(sp =>
-                new EmailSender(builder.Configuration["SendGridApiKey"]));
-
-
-            #region configer Authentcation an token 
-            //builder.Services.AddAuthentication(Options =>
-            //{
-            //    Options.DefaultAuthenticateScheme = "JWT"; //Validate on token
-            //    Options.DefaultChallengeScheme = "JWT"; //redirect on login again if not Autantkated
-            //}).AddJwtBearer("JWT", Options =>
-            //{
-            //    var SecretKeyString = builder.Configuration.GetValue<string>("SecretKey");
-            //    var SecretKeyByte = Encoding.ASCII.GetBytes(SecretKeyString);
-            //    SecurityKey securityKey = new SymmetricSecurityKey(SecretKeyByte);
-            //    Options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens
-            //    .TokenValidationParameters()
-            //    {
-            //        IssuerSigningKey = securityKey,
-            //        ValidateIssuer = false, // who Resive token
-            //        ValidateAudience = false,//FRONTEND who send token
-            //    };
-            //});
-
             #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            #region Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
+            #endregion
 
             app.Run();
         }
