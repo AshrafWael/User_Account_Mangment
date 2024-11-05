@@ -5,6 +5,9 @@ using SendGrid;
 using SendGrid.Helpers.Mail;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using UserAccountMangment.Authentication;
+using UserAccountMangment.Models;
 
 namespace UserAccountMangment.Controllers
 {
@@ -13,12 +16,12 @@ namespace UserAccountMangment.Controllers
     public class AccountsController : ControllerBase
     {
         private readonly IAccountManager _accountManager;
-        private readonly IEmailSender _emailSender;
 
-        public AccountsController(IAccountManager accountManager,IEmailSender emailSender)
+
+        public AccountsController(IAccountManager accountManager)
         {
             _accountManager = accountManager;
-            _emailSender = emailSender;
+          
 
         }
 
@@ -36,9 +39,7 @@ namespace UserAccountMangment.Controllers
                 {
                     return BadRequest(result);
                 }
-                await _emailSender.SendEmailAsync(registerDto.Email,
-                   "<h1>Welcome to AuthApp", "Thank you for registering!</h1><p> new loign to your account at "
-                   + DateTime.Now + "</p>");
+          
                 return Ok(result);
             }
             return BadRequest();
@@ -47,6 +48,8 @@ namespace UserAccountMangment.Controllers
 
         [HttpPost]
         [Route("Login")]
+        [Authorize]
+        [CheckPermission(Permission.Admin)]
         public async Task<IActionResult> Login(AccountLoginDto loginDto)
         {
             if (ModelState.IsValid)
@@ -56,9 +59,7 @@ namespace UserAccountMangment.Controllers
                 {
                     return Unauthorized();
                 }
-                await _emailSender.SendEmailAsync(loginDto.Email,
-                    "<h1>Welcome to AuthApp", "Thank you for registering!</h1><p> new loign to your account at "
-                    + DateTime.Now + "</p>");
+        
                 return Ok(result);
             }
             return BadRequest();
