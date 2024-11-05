@@ -13,6 +13,9 @@ using UserAccountMangment.DbHelper;
 using UserAccountMangment.Dtos.AccountDtos;
 using UserAccountMangment.Manager.Accounts;
 using UserAccountMangment.ConfigrationOptions;
+using UserAccountMangment.Models;
+using Microsoft.Extensions.Options;
+using UserAccountMangment.Authentication;
 
 namespace UserAccountMangment
 {
@@ -23,12 +26,17 @@ namespace UserAccountMangment
             var builder = WebApplication.CreateBuilder(args);
 
             #region Add services to the container.
-            builder.Services.AddControllers();
+             builder.Services.AddControllers();
+            builder.Services.AddControllers(Options =>
+            Options.Filters.Add<PermissionBasedAuthenticationFilter>()
+            );
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddScoped<IAccountManager, AccountManager>();
-           // builder.Services.AddTransient<Manager.Accounts.IEmailSender, EmailSender>(sp =>
-                  //  new EmailSender(builder.Configuration["SendGridApiKey"]));
+
+            // builder.Services.AddTransient<Manager.Accounts.IEmailSender, EmailSender>(sp =>
+            //  new EmailSender(builder.Configuration["SendGridApiKey"]));
             var JwtOptions = builder.Configuration.GetSection("AuthSettings").Get<JwtOptions>();
             builder.Services.AddSingleton(JwtOptions);
             #endregion
